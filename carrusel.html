@@ -1,0 +1,79 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+css
+
+html 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Turismo en Colombia - Carrusel</title>
+</head>
+<body>
+    <header>
+        <h1>Turismo en Colombia</h1>
+        <nav>
+            <!-- Enlaces de navegación -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="Carrusel">
+            <h2>Destinos Destacados</h2>
+            <div class="carousel">
+                <div class="slides">
+                    <img src="Laguna-Grande-de-la-Sierra-Cocuy.jpg" alt="Laguna Grande de la Sierra Cocuy">
+                    <img src="Cabo de la vela, la guajira.jpg" alt="Cabo de la Vela, La Guajira">
+                    <img src="San-andres-.jpg" alt="San Andrés">
+                </div>
+            </div>
+            <button class="prev">⟨</button>
+            <button class="next">⟩</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Isabella Manjarrés | &copy; 2024</p>
+    </footer>
+
+    <script src="carrusel.js"></script>
+</body>
+</html>
