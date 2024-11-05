@@ -57,13 +57,8 @@ img{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer{
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #1e90ff;
-    color: white;
-}
+
+
 table{
     border-collapse: collapse;
     border-radius: 15px;
@@ -72,7 +67,34 @@ table{
     margin-left: auto;
     margin-right: auto;
 }
-form{
-    background-color: #dbe8f5;
+#galeria{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 0;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter:contrast(120%);
+}
+footer {
+    background-color:  #1e90ff;
+    color: white;
     text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
 }
